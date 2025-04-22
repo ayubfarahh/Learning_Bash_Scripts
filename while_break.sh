@@ -2,8 +2,12 @@
 
 count=1
 
-while [ $count -lt 5 ]
+while 
 do 
     echo "Count: $count"
     ((count++))
+    if [ $count -eq 4 ]
+    then 
+        continue
+    fi
 done
