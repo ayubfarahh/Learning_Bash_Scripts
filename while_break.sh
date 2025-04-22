@@ -2,12 +2,12 @@
 
 count=1
 
-while 
+while true 
 do 
     echo "Count: $count"
     ((count++))
-    if [ $count -eq 4 ]
+    if [ $count -eq 10000 ]
     then 
-        continue
+        break
     fi
 done
